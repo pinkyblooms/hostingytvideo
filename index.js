@@ -1,8 +1,9 @@
 const Discord = require("discord.js");
+require('dotenv').config();
 const bot = new Discord.Client();
 const PREFIX = 'test!';
 
-bot.login("ODM2MjQ5ODAwOTAyMTgwOTA1.YIbQUQ.buphAjlt5JLx2Cy_sdzewiGExSA");
+bot.login(process.env.TOKEN);
 
 bot.on("ready", () => {
   console.log("Test bot for hosting vid on yt");
